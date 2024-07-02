@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #2e2c2c;
 }
 
 a {
@@ -434,11 +434,11 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #055353;
 }
 
 #hero h2 {
-  color: #eee;
+  color:  #055353;
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -703,6 +703,7 @@ section {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
+  background: rgba(255, 250, 240, 0.726);
 }
 
 .why-us .box span {
