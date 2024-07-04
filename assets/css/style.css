@@ -422,24 +422,28 @@ h6 {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
-  text-align: center;
-  padding: 0 15px;
+  text-align: left;
+  margin-left: 1px;
+  margin-top: 59px;
+padding: 2cm;
+width: 540px;
+
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 56px;
-  color: #055353;
+  color:  #129e58;
 }
 
 #hero h2 {
   color:  #055353;
-  margin-bottom: 50px;
+  margin-bottom: 23px;
   font-size: 24px;
 }
 
@@ -455,6 +459,7 @@ h6 {
   margin: 10px;
   color: #fff;
   background-color: #129e58;
+  width:140px;
 }
 
 #hero .btn-get-started:hover {
@@ -547,7 +552,7 @@ section {
   border-radius: 50px;
 }
 
-.about .box-heading h3 {
+.f .box-heading h3 {
   font-size: 28px;
   font-weight: 700;
   color: #ffffff;
@@ -724,7 +729,7 @@ section {
 .why-us .box p {
   color: #919191;
   font-size: 15px;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -1073,7 +1078,7 @@ section {
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: rgba(143, 192, 78, 0.8);
+  background: #129e58;
   display: inline-block;
   transition: ease-in-out 0.3s;
   color: #fff;
@@ -1083,7 +1088,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #8fc04e;
+  background: #055353;
 }
 
 .team .member .social i {
@@ -1106,7 +1111,7 @@ section {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #636262;
 }
 
 .team .member .member-info p {
@@ -1139,7 +1144,6 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(2, 2, 2, 0.7);
 }
 
 .testimonials .section-header {
@@ -1178,7 +1182,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.4);
+  color:  #fff;
   font-size: 26px;
 }
 
@@ -1214,7 +1218,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #8fc04e;
+  background-color: #055353;
 }
 
 @media (min-width: 992px) {
@@ -1247,7 +1251,7 @@ section {
 
 .pricing .box h4 {
   font-size: 42px;
-  color: #8fc04e;
+  color:  #055353;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1279,7 +1283,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #8fc04e;
+  color:  #055353;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1308,12 +1312,12 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #8fc04e;
+  background: #055353;
   color: #fff;
 }
 
 .pricing .recommended {
-  border-color: #8fc04e;
+  border-color:  #055353;
 }
 
 .pricing .recommended .btn-buy {
@@ -1322,8 +1326,8 @@ section {
 }
 
 .pricing .recommended .btn-buy:hover {
-  background: #7aa93c;
-  border-color: #7aa93c;
+  background: #055353;
+  border-color:  #055353;
 }
 
 .pricing .recommended-badge {
@@ -1334,16 +1338,22 @@ section {
   z-index: 1;
   font-size: 13px;
   padding: 3px 25px 6px 25px;
-  background: #8fc04e;
+  background: #055353;
   color: #fff;
   border-radius: 0 0 25px 25px;
 }
+
+.pricing{
+  background-image: ;
+  background-position: ;
+}
+
 
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  background: #f5faf0;
+  background: url("../img/FAQ\ fondo.jpg") no-repeat;
 }
 
 .faq .section-title h2 {
@@ -1365,7 +1375,7 @@ section {
 
 .faq .faq-list li {
   padding: 20px;
-  background: #fff;
+  background: #f7e07b;
   border-radius: 4px;
   position: relative;
 }
@@ -1387,7 +1397,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #cbe1ac;
+  color:  #129e58;
 }
 
 .faq .faq-list .icon-show,
@@ -1412,7 +1422,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #8fc04e;
+  color:  #129e58;
 }
 
 .faq .faq-list a.collapsed .icon-show {
