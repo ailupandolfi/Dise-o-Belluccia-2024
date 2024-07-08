@@ -9,6 +9,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.icono{
+width:60px;
+height:60px;
+}
+
+.iconogrande{
+  width:100px;
+  height:100px;
+  }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e2c2c;
@@ -20,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #055353;
+  color: #0f8080;
   text-decoration: none;
 }
 
@@ -43,7 +53,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #8fc04e;
+  background:  #129e58;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +67,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #a2cb6c;
+  background:  #0f8080;
   color: #fff;
 }
 
@@ -201,7 +211,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #8fc04e;
+  color: #1fbe6f;
 }
 
 .navbar .getstarted,
@@ -216,7 +226,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #9bc761;
+  background: #129e58;
 }
 
 .navbar .dropdown ul {
@@ -254,7 +264,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #8fc04e;
+  color: #129e58;
 }
 
 .navbar .dropdown:hover>ul {
@@ -350,7 +360,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #8fc04e;
+  color: #129e58;
 }
 
 .navbar-mobile .getstarted,
@@ -385,7 +395,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #8fc04e;
+  color: #129e58;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -426,8 +436,8 @@ h6 {
   align-items: left;
   flex-direction: column;
   text-align: left;
-  margin-left: 1px;
-  margin-top: 59px;
+  margin-left: 87px;
+  margin-top: 24px;
 padding: 2cm;
 width: 540px;
 
@@ -463,7 +473,7 @@ width: 540px;
 }
 
 #hero .btn-get-started:hover {
-  background: #8fc04e;
+  background: #055353;
 }
 
 @media (min-width: 1024px) {
@@ -555,7 +565,7 @@ section {
 .f .box-heading h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #ffffff;
+  color: #2e2c2c;
   margin-bottom: 15px;
 }
 
@@ -576,13 +586,13 @@ section {
 }
 
 .about .icon-box .icon i {
-  color: #8fc04e;
+  color:  #055353;
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: #8fc04e;
-  border-color: #8fc04e;
+  background: #055353;
+  border-color:  #055353;
 }
 
 .about .icon-box:hover .icon i {
@@ -597,12 +607,12 @@ section {
 }
 
 .about .icon-box .title a {
-  color: #ffffff;
+  color: #2e2c2c;
   transition: 0.3s;
 }
 
 .about .icon-box .title a:hover {
-  color: #8fc04e;
+  color: #055353;
 }
 
 .about .icon-box .description {
@@ -617,19 +627,19 @@ section {
   min-height: 400px;
 }
 
-.about .play-btn {
+/* .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#8fc04e 50%, rgba(143, 192, 78, 0.4) 52%);
+  background: radial-gradient( #055353 50%, rgba(143, 192, 78, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
   left: calc(50% - 47px);
   top: calc(50% - 47px);
   overflow: hidden;
-}
+} */
 
-.about .play-btn::after {
+/* .about .play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -663,7 +673,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #8fc04e;
+  border-left: 15px solid #055353;
   transform: scale(20);
 }
 
@@ -682,7 +692,7 @@ section {
   z-index: 200;
   animation: none;
   border-radius: 0;
-}
+} */
 
 @keyframes pulsate-btn {
   0% {
@@ -734,7 +744,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #055353;
+  background:  #0f8080;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -753,7 +763,7 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts {
+/* .counts {
   background: #fff;
   padding: 0 0 60px 0;
 }
@@ -761,7 +771,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #8fc04e;
+  color:  #055353 ;
 }
 
 .counts .counters p {
@@ -769,7 +779,7 @@ section {
   margin: 0 0 20px 0;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Cta
@@ -805,14 +815,14 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #8fc04e;
-  border: 2px solid #8fc04e;
+  background:  #0f8080 ;
+  border: 2px solid ;
 }
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+/* .services .icon-box {
   text-align: center;
   border: 1px solid #e5f0d5;
   padding: 80px 20px;
@@ -869,7 +879,7 @@ section {
 
 .services .icon-box:hover .icon {
   border-color: #8fc04e;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -903,7 +913,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #055353;
+  background: #0f8080 ;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -929,7 +939,7 @@ section {
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #055353;
+  background:  #0f8080;
   padding: 15px 20px;
 }
 
@@ -1038,6 +1048,11 @@ section {
   padding: 0;
 }
 
+.portfolio{
+  background-image: url("../img/fondo\ resultados\ anteriores.jpg");
+  background-position: ;
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1088,7 +1103,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #055353;
+  background: #0f8080 ;
 }
 
 .team .member .social i {
@@ -1232,12 +1247,13 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #f9f9f9;
+  background: #54df9a46;
   text-align: center;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
   border: 1px solid #f9f9f9;
+  margin-bottom: 190px;
 }
 
 .pricing .box h3 {
@@ -1312,7 +1328,7 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #055353;
+  background:  #0f8080;
   color: #fff;
 }
 
@@ -1326,8 +1342,8 @@ section {
 }
 
 .pricing .recommended .btn-buy:hover {
-  background: #055353;
-  border-color:  #055353;
+  background: #0f8080;
+  border-color:  ;
 }
 
 .pricing .recommended-badge {
@@ -1344,7 +1360,7 @@ section {
 }
 
 .pricing{
-  background-image: ;
+  background-image: url("../img/fondo\ cursos.jpg");
   background-position: ;
 }
 
@@ -1422,7 +1438,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color:  #129e58;
+  color:   #0f8080;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1449,7 +1465,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #8fc04e;
+  color: #129e58;
   float: left;
   width: 44px;
   height: 44px;
@@ -1484,7 +1500,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #8fc04e;
+  background:  #0f8080;
   color: #fff;
 }
 
@@ -1554,7 +1570,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #8fc04e;
+  background:  #129e58;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1563,7 +1579,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #7aa93c;
+  background:   #0f8080;
 }
 
 @keyframes animate-loading {
@@ -1641,7 +1657,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(15, 15, 15, 0.75);
+  background:;
   z-index: 1;
 }
 
@@ -1699,7 +1715,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #8fc04e;
+  background:  #129e58;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1707,7 +1723,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #75a239;
+  background: #0f8080 ;
 }
 
 #footer .footer-top .social-links {
@@ -1717,7 +1733,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #8fc04e;
+  background:  #129e58;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1730,7 +1746,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #75a239;
+  background:  #0f8080;
   color: #fff;
   text-decoration: none;
 }
