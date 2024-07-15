@@ -408,10 +408,9 @@ h6 {
 #hero {
   width: 100%;
   height: 60vh;
-  background: url("../img/hero.jpg") top center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: contain;
-  background-position: center above;
-  background-repeat: no-repeat;
+  position: relative;
   text-align: left;
 
 }
@@ -437,8 +436,8 @@ h6 {
   align-items: left;
   flex-direction: column;
   text-align: left;
-  margin-left: 37px;
-  margin-top: 90px;
+  margin-left: 36px;
+  margin-top: 29px;
 padding: 2cm;
 width: 540px;
 
@@ -446,16 +445,18 @@ width: 540px;
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 52px;
+  font-size: 51px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 47px;
   color:  #129e58;
 }
 
 #hero h2 {
   color:  #055353;
   margin-bottom: 23px;
+  margin-top: 6px;
   font-size: 24px;
+  line-height: 27px;
 }
 
 #hero .btn-get-started {
@@ -467,7 +468,7 @@ width: 540px;
   padding: 8px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 3px;
   color: #fff;
   background-color: #129e58;
   width:140px;
@@ -485,10 +486,16 @@ width: 540px;
 
 @media (max-width: 768px) {
   #hero {
-    height: 70vh;
-    background-image: url("../img/hero\ mobile.jpg");
-    background-position: center above;
+    height: 100vh;
+    background-image: url("../img/hero-mobile.jpg");
     background-size: cover;
+  }
+
+  #hero .hero-container {
+    margin-left: 26px;
+    margin-top: 29px;
+  padding: 1cm;
+  width: 348px;
   }
 
   #hero h1 {
@@ -499,10 +506,115 @@ width: 540px;
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
+/*--------------------------------------------------------------
+# Herocurso Section
+--------------------------------------------------------------*/
+#herocurso {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/detalle/hero-detalle.jpg") top center;
+  background-size: contain;
+  position: relative;
+  text-align: left;
+
+}
+
+#herocurso:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#herocurso .herocurso-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 36px;
+  margin-top: 24px;
+padding: 2cm;
+width: 527px;
+
+}
+
+#herocurso h1 {
+  margin: 0 0 10px 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px;
+  color:  #129e58;
+}
+
+#herocurso h2 {
+  color:  #055353;
+  margin-bottom: 23px;
+  font-size: 24px;
+}
+
+#herocurso .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 3px;
+  color: #fff;
+  background-color: #129e58;
+  width:140px;
+}
+
+#herocurso .btn-get-started:hover {
+  background: #055353;
+}
+
+@media (min-width: 1024px) {
+  #herocurso {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #herocurso {
+    height: 100vh;
+    background-image: url("../img/hero-detalle-mobile.jpg");
+    background-size: cover;
+  }
+
+  #herocurso .herocurso-container {
+    margin-left: 26px;
+    margin-top: 29px;
+  padding: 1cm;
+  width: 369px;
+  }
+
+  #herocurso h1 {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  #herocurso h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -522,7 +634,6 @@ section {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: #f3f8ec;
   color: #055353;
   display: inline-block;
   text-transform: uppercase;
@@ -557,8 +668,8 @@ section {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 700;
-  padding: 8px 20px;
-  margin: 0 0 15px 0;
+  /* padding: 8px 20px; */
+  margin: 0 0 15px 2px;
   background: #f3f8ec;
   color: #055353;
   display: inline-block;
@@ -711,18 +822,132 @@ section {
 }
 
 .about{
-  background-image: url("../img/fondo\ about\ us.jpg");
+  background-image: url("../img/fondo-about-us.jpg");
   background-position: center bottom;
+  background-size: cover;
 }
 
-@media screen (max-width: 768px) {
-  about .video-box
+/*--------------------------------------------------------------
+# Taller
+--------------------------------------------------------------*/
+.taller .box-heading h4 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  /* padding: 8px 20px; */
+  margin: 0 0 15px 0;
+  background: #f3f8ec; 
+  color: #055353;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
-@media (min-width: 768px) {
-  about.video-box {
- 
+.f .box-heading h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e2c2c;
+  margin-bottom: 15px;
+}
+
+
+.taller .icon-box {
+  margin-top: 40px;
+}
+
+.taller .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #d6e8bf;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.taller .icon-box .icon i {
+  color:  #191a1a;
+  font-size: 32px;
+}
+
+.taller .icon-box:hover .icon {
+  background: #055353;
+  border-color:  #055353;
+}
+
+.about .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.taller .icon-box .title {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.taller .icon-box .title a {
+  color: #2e2c2c;
+  transition: 0.3s;
+}
+
+.taller .icon-box .title a:hover {
+  color: #055353;
+}
+
+.taller .icon-box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.taller .video-box {
+  background: url("../img/detalle/foto-curso.png") center center no-repeat;
+  background-size: contain;
+  min-height: 400px;
+}
+
+.taller .play-btn:hover::after {
+  border-left: 15px solid #055353;
+  transform: scale(20);
+}
+
+.taller .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+} */
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
   }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+.taller{
+  background-image: url("../img/fondo-about-us.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
 
 /*--------------------------------------------------------------
 # Why Us
@@ -731,7 +956,7 @@ section {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 250, 240, 0.726);
+  background: rgb(255, 250, 240);
 }
 
 .why-us .box span {
@@ -750,9 +975,9 @@ section {
 }
 
 .why-us .box p {
-  color: #919191;
+  color: #353535;
   font-size: 15px;
-  margin-top: 0;
+  margin-top: 16px;
   padding: 0;
 }
 
@@ -769,10 +994,86 @@ section {
 }
 
 .why-us{
-  background-image: url("../img/why\ us\ fondo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/why-us-fondo.jpg");
+  background-position: center above;
+  background-size: cover ;
+}
+
+@media (max-width: 768px) {
+  #why-us{
+    background-image: url("../img/why-us-mobile.jpg");
+  }
+  }
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+/* .counts {
+  background: #fff;
+  padding: 0 0 60px 0;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  color:  #055353 ;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+} */
+
+/*--------------------------------------------------------------
+# Beneficios
+--------------------------------------------------------------*/
+.beneficios .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: rgb(247, 192, 192);
+}
+
+.beneficios .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #055353;
+}
+
+.beneficios .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #353535;
+}
+
+.beneficios .box p {
+  color: #353535;
+  font-size: 15px;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.beneficios .box:hover {
+  background:  #0f8080;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.beneficios.box:hover span,
+.beneficios .box:hover h4,
+.beneficios .box:hover p {
+  color: #fff;
+}
+
+.beneficios{
+  background-image: url("../img/detalle/beneficios-fondo.jpg");
+  background-position: center above;
+  background-size: cover ;
 }
 
 /*--------------------------------------------------------------
@@ -795,6 +1096,7 @@ section {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 } */
+
 
 /*--------------------------------------------------------------
 # Cta
@@ -960,7 +1262,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #fff;
+  color: #ffffff00;
   font-weight: 600;
 }
 
@@ -1064,10 +1366,229 @@ section {
 }
 
 .portfolio{
-  background-image: url("../img/fondo\ resultados\ anteriores.jpg");
-  background-position:center;
-  background-size: cover;
+  background-image: url("../img/fondo-resultados-anteriores.jpg");
+  background-position: center;
 }
+
+/*--------------------------------------------------------------
+# GaleriaCurso 
+--------------------------------------------------------------*/
+.galeriacurso {
+  padding-bottom: 40px;
+}
+
+.galeriacurso #galeriacurso-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.galeriacurso #galeriacurso-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #efefef;
+  border-radius: 50px;
+}
+
+.galeriacurso #galeriacurso-flters li:hover,
+.galeriacurso #galeriacurso-flters li.filter-active {
+  color: #fff;
+  background: #0f8080;
+}
+
+.galeriacurso #galeriacurso-flters li:last-child {
+  margin-right: 0;
+}
+
+.galeriacurso .galeriacurso-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.galeriacurso .galeriacurso-item img {
+  position: relative;
+  top: 0;
+  transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.galeriacurso .galeriacurso-item .galeriacurso-info {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -50px;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: #0f8080;
+  padding: 15px 20px;
+}
+
+.galeriacurso .galeriacurso-item .galeriacurso-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.galeriacurso .galeriacurso-item .galeriacurso-info p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.galeriacurso .galeriacurso-item .galeriacurso-info .preview-link,
+.galeriacurso .galeriacurso-item .galeriacurso-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.galeriacurso .galeriacurso-item .galeriacurso-info .preview-link:hover,
+.galeriacurso .galeriacurso-item .galeriacurso-info .details-link:hover {
+  color: #d6e8bf;
+}
+
+.galeriacurso .galeriacurso-item .galeriacurso-info .details-link {
+  right: 15px;
+}
+
+.galeriacurso .galeriacurso-item:hover img {
+  top: -30px;
+}
+
+.galeriacurso .galeriacurso-item:hover .galeriacurso-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# GaleriaCurso Details
+--------------------------------------------------------------*/
+.galeriacurso-details {
+  padding-top: 40px;
+}
+
+.galeriacurso-details .galeriacurso-details-slider img {
+  width: 100%;
+}
+
+.galeriacurso-details .galeriacurso-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.galeriacurso-details .galeriacurso-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #055353;
+}
+
+.galeriacurso-details .galeriacurso-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #055353;
+}
+
+.galeriacurso-details .galeriacurso-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(53, 53, 53, 0.08);
+}
+
+.galeriacurso-details .galeriacurso-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.galeriacurso-details .galeriacurso-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.galeriacurso-details .galeriacurso-info ul li+li {
+  margin-top: 10px;
+}
+
+.galeriacurso-details .galeriacurso-description {
+  padding-top: 30px;
+}
+
+.galeriacurso-details .galeriacurso-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.galeriacurso-details .galeriacurso-description p {
+  padding: 0;
+}
+
+.galeriacurso {
+  background-image: url("../img/FAQ-fondo.jpg");
+  background-position: center;
+}
+
+/*--------------------------------------------------------------
+# Ctacurso
+--------------------------------------------------------------*/
+.ctacurso {
+  background:  url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.ctacurso h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ctacurso p {
+  color: #fff;
+  /* padding-left: 150px;
+  padding-right: 150px; */
+}
+
+.ctacurso .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #129e58;
+}
+
+.ctacurso .cta-btn:hover {
+  background:  #0f8080 ;
+  border: 2px solid ;
+}
+
+/* @media (max-width: 768px){
+  #ctacurso.p {
+    color: #fff;
+    padding-left:0px;
+    padding-right: 0px;
+  } */
+/* } */
 
 /*--------------------------------------------------------------
 # Team
@@ -1157,13 +1678,14 @@ section {
   bottom: 15px;
 }
 
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   position: relative;
 }
@@ -1249,7 +1771,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #055353;
+  background-color:  #129e58;
 }
 
 @media (min-width: 992px) {
@@ -1258,18 +1780,30 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  #testimonials {
+    height: 100vh;
+    background-image: url("../img/testimonials-mobile.jpg");
+    background-size: cover;
+    height: 700px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing{
+  height: 980px;
+}
 .pricing .box {
   padding: 20px;
-  background: ;
+  background: #ffffff;
   text-align: center;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
   border: 1px solid  #129e58;
-  margin-bottom: 190px;
+  margin-bottom: 2px;
 }
 
 .pricing .box h3 {
@@ -1277,9 +1811,8 @@ section {
   padding: 15px;
   margin-top: 15px;
   font-size: 18px;
-  font-weight: 600;
-  color:  #129e58;
-  font-family: "Raleway", sans-serif, bold;
+  font-weight: 800;
+  color:#129e58
 }
 
 .pricing .box h4 {
@@ -1312,7 +1845,8 @@ section {
 }
 
 .pricing .box ul li {
-  padding-bottom: 16px;
+  padding-bottom: 6px;
+  margin-top: 15px;
 }
 
 .pricing .box ul i {
@@ -1360,7 +1894,6 @@ section {
 
 .pricing .recommended .btn-buy:hover {
   background: #0f8080;
-  border-color:  ;
 }
 
 .pricing .recommended-badge {
@@ -1377,16 +1910,16 @@ section {
 }
 
 .pricing{
-  background-image: url("../img/fondo\ cursos.jpg");
-  background-position: center;
+  background-image: url("../img/fondo-cursos.jpg");
   background-size: cover;
+  background-position: center;
 }
 
-@media (max-width: 768px) {
-  #pricing {
-  background-image: url("../img/cursos\ mobile.jpg");
-  background-position: center;
-  background-size: cover;
+@media (max-width:768px) {
+  .pricing{
+ height: 1880px;
+ background-image: url("../img/cursos-mobile.jpg");
+}
 }
 
 
@@ -1394,14 +1927,12 @@ section {
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  background-image: url("../img/FAQ\ fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/FAQ-fondo.jpg") no-repeat;
 }
 
-.faq .section-title h2 {
+/* .faq .section-title h2 {
   background: #e9f3dd;
-}
+} */
 
 .faq .faq-list {
   padding: 0 100px;
@@ -1418,7 +1949,7 @@ section {
 
 .faq .faq-list li {
   padding: 20px;
-  background: #f3955f;
+  background: #faa778;
   border-radius: 4px;
   position: relative;
 }
@@ -1609,6 +2140,12 @@ section {
   background:   #0f8080;
 }
 
+.contact{
+  background-image: url("../img/fondo-contacto.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1617,12 +2154,6 @@ section {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.contact{
-  background: url("../img/fondo\ contacto.jpg") no-repeat;
-  background-size: cover;
-}
 }
 
 /*--------------------------------------------------------------
@@ -1677,11 +2208,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg");
-  background position: center;
-  background-repeat:no-repeat;
+  background: url("../img/footer-bg.jpg") center no-repeat;
   background-size: cover;
-;
+  color: #fff;
   font-size: 14px;
   position: relative;
 }
@@ -1693,7 +2222,6 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background:;
   z-index: 1;
 }
 
